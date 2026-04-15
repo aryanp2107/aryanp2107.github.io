@@ -25,7 +25,7 @@
         header {
             border-bottom: 2px solid #2c2c2c;
             padding-bottom: 40px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             display: flex;
             gap: 40px;
             align-items: center;
@@ -81,13 +81,12 @@
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: 400;
             margin-bottom: 25px;
             color: #1a1a1a;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: 1.1rem;
         }
 
         p {
@@ -226,39 +225,32 @@
             color: #555;
         }
 
-        /* Skills */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
+        /* Skills - scoped to .container only */
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 30px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        .container h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
         
-        table {
+        .container table {
             width: 100%;
             border-collapse: collapse;
         }
 
-        td {
+        .container td {
             padding: 12px 15px;
             vertical-align: top;
         }
         
-        td:first-child {
+        .container td:first-child {
             font-weight: bold;
             width: 25%;
-        }
-        
-        h2 {
-            margin-top: 0;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
         }
 
         /* Certifications */
@@ -377,10 +369,10 @@
             <p class="title">Graduate Student in Artificial Intelligence | Northeastern University</p>
             <div class="contact-links">
                 <a href="mailto:patel.aryana@northeastern.edu">E-Mail</a>
-                <a target="_blank" href="Aryan_Resume(AP).pdf" target="_blank">CV</a>
-                <a target="_blank" href="https://linkedin.com/in/aryan-patel2107" target="_blank">LinkedIn</a>
-                <a target="_blank" href="https://github.com/aryanp2107" target="_blank">GitHub</a>
-                <a target="_blank" href="https://leetcode.com/u/ap252143/" target="_blank">LeetCode</a>
+                <a target="_blank" href="Aryan_Resume(AP).pdf">CV</a>
+                <a target="_blank" href="https://linkedin.com/in/aryan-patel2107">LinkedIn</a>
+                <a target="_blank" href="https://github.com/aryanp2107">GitHub</a>
+                <a target="_blank" href="https://leetcode.com/u/ap252143/">LeetCode</a>
             </div>
         </div>
     </header>
@@ -389,8 +381,8 @@
     <section id="about">
         <h2>About</h2>
         <p>I am a Graduate student in Artificial Intelligence at Northeastern University, Boston, with a concentration in Machine Learning. My academic and professional journey is driven by a passion for creating intelligent systems that bridge the gap between data and meaningful impact.  My research interests lie at the intersection of deep learning, computer vision, and natural language processing, with a particular focus on developing scalable solutions for real-world applications</p>
-        <p>I earned my Bachelor’s in Computer Science and Engineering with a specialization in AI and Machine Learning from Quantum University, where I built a strong foundation in machine learning theory and practical implementation. My experience spans image classification, neural network architectures, and production-ready ML pipelines, combining both academic research and industry-driven projects.</p>
-        <p>When I’m not working on models, you’ll find me listening to music, exploring new ideas, or catching up the 49ers/SF Giants game</p>
+        <p>I earned my Bachelor's in Computer Science and Engineering with a specialization in AI and Machine Learning from Quantum University, where I built a strong foundation in machine learning theory and practical implementation. My experience spans image classification, neural network architectures, and production-ready ML pipelines, combining both academic research and industry-driven projects.</p>
+        <p>When I'm not working on models, you'll find me listening to music, exploring new ideas, or catching up the 49ers/SF Giants game</p>
     </section>
 
     <!-- Research Interests -->
@@ -418,8 +410,6 @@
                 <a href="#">arXiv</a>
             </div>
         </div>
-
-        <!-- Add more publications as needed -->
     </section>
 
     <!-- Projects -->
@@ -533,7 +523,6 @@
             </tr>
         </table>
     </div>
-    </section>
 
     <!-- Certifications -->
     <section id="certifications" class="cert-list">
@@ -571,8 +560,6 @@
             <div class="article-description">Exploring how computer vision is transforming medical diagnostics, with case studies on lung disease detection and cancer screening applications.</div>
             <a href="#" class="article-link">Read on LinkedIn →</a>
         </div>
-
-        <!-- Add more articles as needed -->
     </section>
 
     <!-- Footer -->
