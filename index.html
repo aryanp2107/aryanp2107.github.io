@@ -18,15 +18,15 @@
     --rule: #ddd;
     --serif: 'EB Garamond', Georgia, serif;
     --mono: 'IBM Plex Mono', monospace;
-    --max-w: 820px;
+    --max-w: 960px;
   }
 
   body {
     font-family: var(--serif);
     background: var(--bg);
     color: var(--text);
-    font-size: 17px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -36,17 +36,17 @@
   main {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: 60px 40px 80px;
+    padding: 64px 48px 100px;
   }
 
   /* NAV */
   nav {
     font-family: var(--mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     display: flex;
-    gap: 22px;
+    gap: 26px;
     flex-wrap: wrap;
-    margin-bottom: 56px;
+    margin-bottom: 64px;
     color: var(--faint);
   }
   nav a { color: var(--faint); text-decoration: none; }
@@ -56,44 +56,44 @@
   .hero {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 48px;
   }
   .hero-text { flex: 1; }
   .hero-text h1 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     font-weight: 500;
-    letter-spacing: -0.01em;
-    margin-bottom: 6px;
+    letter-spacing: -0.015em;
+    margin-bottom: 8px;
   }
   .subtitle {
     font-family: var(--mono);
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     color: var(--faint);
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
   .intro {
     color: var(--dim);
-    font-size: 1.05rem;
-    margin-bottom: 20px;
-    max-width: 540px;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    max-width: 600px;
   }
   .links {
     font-family: var(--mono);
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     display: flex;
-    gap: 18px;
+    gap: 22px;
     flex-wrap: wrap;
   }
   .links a { color: var(--faint); text-decoration: none; }
   .links a:hover { color: var(--text); }
 
   .hero-photo {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
-    margin-top: 6px;
+    margin-top: 8px;
     border: 2px solid #e8e8e8;
   }
   .hero-photo img {
@@ -104,35 +104,35 @@
   }
 
   /* SECTIONS */
-  section { margin-top: 52px; }
+  section { margin-top: 64px; }
   section h2 {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--faint);
-    margin-bottom: 20px;
-    padding-bottom: 8px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--rule);
   }
 
   /* ABOUT */
   .about p {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--dim);
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   /* RESEARCH INTERESTS */
   .interests-list {
-    font-size: 0.97rem;
+    font-size: 1.02rem;
     color: var(--dim);
-    line-height: 1.8;
+    line-height: 1.85;
   }
   .interest-item {
-    margin-bottom: 6px;
-    padding-left: 20px;
+    margin-bottom: 8px;
+    padding-left: 22px;
     position: relative;
   }
   .interest-item::before {
@@ -147,71 +147,71 @@
   }
 
   /* PUBLICATIONS */
-  .pub { margin-bottom: 22px; }
+  .pub { margin-bottom: 26px; }
   .pub h3 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 500;
     font-style: italic;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
   }
   .pub .authors {
-    font-size: 0.93rem;
+    font-size: 0.97rem;
     color: var(--dim);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
   .pub .authors strong { font-weight: 600; color: var(--text); }
   .pub-links {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.76rem;
   }
-  .pub-links a { color: var(--faint); margin-right: 14px; }
+  .pub-links a { color: var(--faint); margin-right: 16px; }
   .pub-links a:hover { color: var(--text); }
 
   /* PROJECTS */
-  .project { margin-bottom: 28px; }
+  .project { margin-bottom: 32px; }
   .project h3 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
   .project p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--dim);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
   .project-tech {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     color: var(--faint);
     font-style: italic;
   }
 
   /* EDUCATION & EXPERIENCE */
-  .timeline { margin-bottom: 24px; padding-left: 18px; border-left: 2px solid var(--rule); }
-  .timeline h3 { font-size: 1.02rem; font-weight: 500; margin-bottom: 2px; }
-  .timeline .where { font-size: 0.95rem; color: var(--dim); }
+  .timeline { margin-bottom: 28px; padding-left: 20px; border-left: 2px solid var(--rule); }
+  .timeline h3 { font-size: 1.08rem; font-weight: 500; margin-bottom: 3px; }
+  .timeline .where { font-size: 1rem; color: var(--dim); }
   .timeline .when {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     color: var(--faint);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .timeline .detail {
-    font-size: 0.93rem;
+    font-size: 0.97rem;
     color: var(--dim);
-    margin-bottom: 3px;
+    margin-bottom: 4px;
   }
   .timeline ul {
-    padding-left: 18px;
-    font-size: 0.93rem;
+    padding-left: 20px;
+    font-size: 0.97rem;
     color: var(--dim);
   }
-  .timeline li { margin-bottom: 5px; }
+  .timeline li { margin-bottom: 6px; }
 
   /* SKILLS */
   .skill-row {
-    margin-bottom: 10px;
-    font-size: 0.95rem;
+    margin-bottom: 12px;
+    font-size: 1rem;
   }
   .skill-row strong {
     color: var(--text);
@@ -221,12 +221,12 @@
 
   /* CERTS */
   .cert-list {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--dim);
   }
   .cert-item {
-    margin-bottom: 5px;
-    padding-left: 16px;
+    margin-bottom: 6px;
+    padding-left: 18px;
     position: relative;
   }
   .cert-item::before {
@@ -238,49 +238,49 @@
 
   /* ARTICLES */
   .article {
-    margin-bottom: 22px;
-    padding-bottom: 18px;
+    margin-bottom: 26px;
+    padding-bottom: 22px;
     border-bottom: 1px solid #f0f0f0;
   }
   .article:last-child { border-bottom: none; }
   .article h3 {
-    font-size: 1.02rem;
+    font-size: 1.08rem;
     font-weight: 500;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
   }
   .article p {
-    font-size: 0.93rem;
+    font-size: 0.97rem;
     color: var(--dim);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
   .article a {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     color: var(--faint);
   }
   .article a:hover { color: var(--text); }
 
   /* FOOTER */
   footer {
-    margin-top: 64px;
-    padding-top: 20px;
+    margin-top: 80px;
+    padding-top: 24px;
     border-top: 1px solid var(--rule);
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     color: var(--faint);
     display: flex;
     justify-content: space-between;
   }
-  footer a { color: var(--faint); text-decoration: none; margin-left: 16px; }
+  footer a { color: var(--faint); text-decoration: none; margin-left: 18px; }
   footer a:hover { color: var(--text); }
 
-  @media (max-width: 600px) {
-    main { padding: 40px 20px 60px; }
-    .hero { flex-direction: column-reverse; gap: 20px; }
-    .hero-photo { width: 110px; height: 110px; }
-    .hero-text h1 { font-size: 1.75rem; }
-    footer { flex-direction: column; gap: 8px; }
-    footer a { margin-left: 0; margin-right: 14px; }
+  @media (max-width: 680px) {
+    main { padding: 40px 24px 60px; }
+    .hero { flex-direction: column-reverse; gap: 24px; }
+    .hero-photo { width: 120px; height: 120px; }
+    .hero-text h1 { font-size: 2rem; }
+    footer { flex-direction: column; gap: 10px; }
+    footer a { margin-left: 0; margin-right: 16px; }
   }
 </style>
 </head>
