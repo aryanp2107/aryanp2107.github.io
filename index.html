@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +18,7 @@
     --rule: #ddd;
     --serif: 'EB Garamond', Georgia, serif;
     --mono: 'IBM Plex Mono', monospace;
-    --max-w: 620px;
+    --max-w: 820px;
   }
 
   body {
@@ -37,7 +36,7 @@
   main {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: 60px 24px 80px;
+    padding: 60px 40px 80px;
   }
 
   /* NAV */
@@ -45,7 +44,7 @@
     font-family: var(--mono);
     font-size: 0.75rem;
     display: flex;
-    gap: 20px;
+    gap: 22px;
     flex-wrap: wrap;
     margin-bottom: 56px;
     color: var(--faint);
@@ -57,12 +56,11 @@
   .hero {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 36px;
+    gap: 40px;
   }
   .hero-text { flex: 1; }
   .hero-text h1 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: -0.01em;
     margin-bottom: 6px;
@@ -71,12 +69,13 @@
     font-family: var(--mono);
     font-size: 0.78rem;
     color: var(--faint);
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
   .intro {
     color: var(--dim);
-    font-size: 1rem;
-    margin-bottom: 18px;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    max-width: 540px;
   }
   .links {
     font-family: var(--mono);
@@ -89,12 +88,13 @@
   .links a:hover { color: var(--text); }
 
   .hero-photo {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
-    margin-top: 4px;
+    margin-top: 6px;
+    border: 2px solid #e8e8e8;
   }
   .hero-photo img {
     width: 100%;
@@ -104,7 +104,7 @@
   }
 
   /* SECTIONS */
-  section { margin-top: 48px; }
+  section { margin-top: 52px; }
   section h2 {
     font-family: var(--mono);
     font-size: 0.72rem;
@@ -112,27 +112,27 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--faint);
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--rule);
   }
 
   /* ABOUT */
   .about p {
-    font-size: 0.98rem;
+    font-size: 1rem;
     color: var(--dim);
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   /* RESEARCH INTERESTS */
   .interests-list {
-    font-size: 0.95rem;
+    font-size: 0.97rem;
     color: var(--dim);
     line-height: 1.8;
   }
   .interest-item {
     margin-bottom: 6px;
-    padding-left: 18px;
+    padding-left: 20px;
     position: relative;
   }
   .interest-item::before {
@@ -147,17 +147,17 @@
   }
 
   /* PUBLICATIONS */
-  .pub { margin-bottom: 20px; }
+  .pub { margin-bottom: 22px; }
   .pub h3 {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 500;
     font-style: italic;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
   .pub .authors {
-    font-size: 0.9rem;
+    font-size: 0.93rem;
     color: var(--dim);
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
   .pub .authors strong { font-weight: 600; color: var(--text); }
   .pub-links {
@@ -168,16 +168,16 @@
   .pub-links a:hover { color: var(--text); }
 
   /* PROJECTS */
-  .project { margin-bottom: 24px; }
+  .project { margin-bottom: 28px; }
   .project h3 {
-    font-size: 1.02rem;
+    font-size: 1.05rem;
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
   .project p {
-    font-size: 0.93rem;
+    font-size: 0.95rem;
     color: var(--dim);
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
   .project-tech {
     font-family: var(--mono);
@@ -187,31 +187,31 @@
   }
 
   /* EDUCATION & EXPERIENCE */
-  .timeline { margin-bottom: 22px; padding-left: 16px; border-left: 2px solid var(--rule); }
-  .timeline h3 { font-size: 1rem; font-weight: 500; margin-bottom: 2px; }
-  .timeline .where { font-size: 0.93rem; color: var(--dim); }
+  .timeline { margin-bottom: 24px; padding-left: 18px; border-left: 2px solid var(--rule); }
+  .timeline h3 { font-size: 1.02rem; font-weight: 500; margin-bottom: 2px; }
+  .timeline .where { font-size: 0.95rem; color: var(--dim); }
   .timeline .when {
     font-family: var(--mono);
     font-size: 0.72rem;
     color: var(--faint);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .timeline .detail {
-    font-size: 0.9rem;
+    font-size: 0.93rem;
     color: var(--dim);
     margin-bottom: 3px;
   }
   .timeline ul {
     padding-left: 18px;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
     color: var(--dim);
   }
-  .timeline li { margin-bottom: 4px; }
+  .timeline li { margin-bottom: 5px; }
 
   /* SKILLS */
   .skill-row {
     margin-bottom: 10px;
-    font-size: 0.93rem;
+    font-size: 0.95rem;
   }
   .skill-row strong {
     color: var(--text);
@@ -221,7 +221,7 @@
 
   /* CERTS */
   .cert-list {
-    font-size: 0.93rem;
+    font-size: 0.95rem;
     color: var(--dim);
   }
   .cert-item {
@@ -238,20 +238,20 @@
 
   /* ARTICLES */
   .article {
-    margin-bottom: 20px;
-    padding-bottom: 16px;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
     border-bottom: 1px solid #f0f0f0;
   }
   .article:last-child { border-bottom: none; }
   .article h3 {
-    font-size: 1rem;
+    font-size: 1.02rem;
     font-weight: 500;
     margin-bottom: 3px;
   }
   .article p {
-    font-size: 0.9rem;
+    font-size: 0.93rem;
     color: var(--dim);
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
   .article a {
     font-family: var(--mono);
@@ -274,11 +274,11 @@
   footer a { color: var(--faint); text-decoration: none; margin-left: 16px; }
   footer a:hover { color: var(--text); }
 
-  @media (max-width: 520px) {
-    main { padding: 40px 18px 60px; }
+  @media (max-width: 600px) {
+    main { padding: 40px 20px 60px; }
     .hero { flex-direction: column-reverse; gap: 20px; }
-    .hero-photo { width: 100px; height: 100px; }
-    .hero-text h1 { font-size: 1.6rem; }
+    .hero-photo { width: 110px; height: 110px; }
+    .hero-text h1 { font-size: 1.75rem; }
     footer { flex-direction: column; gap: 8px; }
     footer a { margin-left: 0; margin-right: 14px; }
   }
