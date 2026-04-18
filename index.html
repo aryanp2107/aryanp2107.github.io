@@ -125,25 +125,35 @@
   }
 
   /* RESEARCH INTERESTS */
-  .interests-list {
-    font-size: 1.02rem;
-    color: var(--dim);
-    line-height: 1.85;
+  .interests-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
   }
   .interest-item {
-    margin-bottom: 8px;
-    padding-left: 22px;
-    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
   }
-  .interest-item::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    color: var(--faint);
+  .interest-marker {
+    width: 6px;
+    height: 6px;
+    background: var(--text);
+    border-radius: 1px;
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+  .interest-content {
+    font-size: 1.02rem;
+    color: var(--dim);
+    line-height: 1.65;
   }
   .interest-label {
+    display: block;
     color: var(--text);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 2px;
   }
 
   /* PUBLICATIONS */
@@ -279,6 +289,7 @@
     .hero { flex-direction: column-reverse; gap: 24px; }
     .hero-photo { width: 120px; height: 120px; }
     .hero-text h1 { font-size: 2rem; }
+    .interests-grid { grid-template-columns: 1fr; gap: 16px; }
     footer { flex-direction: column; gap: 10px; }
     footer a { margin-left: 0; margin-right: 16px; }
   }
@@ -327,13 +338,49 @@
   <!-- RESEARCH INTERESTS -->
   <section id="interests">
     <h2>Research Interests</h2>
-    <div class="interests-list">
-      <div class="interest-item"><span class="interest-label">Deep Learning & Neural Networks:</span> design and optimization of CNNs, RNNs, and transformer-based architectures</div>
-      <div class="interest-item"><span class="interest-label">Computer Vision & Image Processing:</span> object detection, segmentation, and scene understanding</div>
-      <div class="interest-item"><span class="interest-label">Autonomous Systems:</span> AI-driven perception, control, and sensor fusion for autonomous vehicles and robotics</div>
-      <div class="interest-item"><span class="interest-label">MLOps & ML Pipelines:</span> scalable model deployment, workflow automation, and pipeline development using TFX</div>
-      <div class="interest-item"><span class="interest-label">Natural Language Processing:</span> generative models and representation learning for language understanding</div>
-      <div class="interest-item"><span class="interest-label">Scalable & Responsible AI:</span> efficient ML pipelines, interpretability, and ethical model deployment</div>
+    <div class="interests-grid">
+      <div class="interest-item">
+        <div class="interest-marker"></div>
+        <div class="interest-content">
+          <span class="interest-label">Deep Learning & Neural Networks</span>
+          Design and optimization of CNNs, RNNs, and transformer-based architectures
+        </div>
+      </div>
+      <div class="interest-item">
+        <div class="interest-marker"></div>
+        <div class="interest-content">
+          <span class="interest-label">Computer Vision & Image Processing</span>
+          Object detection, segmentation, and scene understanding
+        </div>
+      </div>
+      <div class="interest-item">
+        <div class="interest-marker"></div>
+        <div class="interest-content">
+          <span class="interest-label">Autonomous Systems</span>
+          AI-driven perception, control, and sensor fusion for autonomous vehicles and robotics
+        </div>
+      </div>
+      <div class="interest-item">
+        <div class="interest-marker"></div>
+        <div class="interest-content">
+          <span class="interest-label">MLOps & ML Pipelines</span>
+          Scalable model deployment, workflow automation, and pipeline development using TFX
+        </div>
+      </div>
+      <div class="interest-item">
+        <div class="interest-marker"></div>
+        <div class="interest-content">
+          <span class="interest-label">Natural Language Processing</span>
+          Generative models and representation learning for language understanding
+        </div>
+      </div>
+      <div class="interest-item">
+        <div class="interest-marker"></div>
+        <div class="interest-content">
+          <span class="interest-label">Scalable & Responsible AI</span>
+          Efficient ML pipelines, interpretability, and ethical model deployment
+        </div>
+      </div>
     </div>
   </section>
 
