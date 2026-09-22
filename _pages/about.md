@@ -5,13 +5,8 @@ layout: single
 author_profile: true
 ---
 
-I'm a graduate student in Artificial Intelligence at Northeastern University's Khoury College, specializing in computer vision and deep learning. Starting August 2026, I'll be joining the [BioTranslation Lab](https://www.joshi-lab.com/) at Brigham and Women's Hospital / Harvard Medical School under Dr. Nitin Joshi for a one-year research internship.
+Aryan is a Master's student in Artificial Intelligence at Northeastern University's Khoury College of Computer Sciences, where he specializes in deep learning and computer vision. Curiosity about AI for Science is what drew him to the intersection of Ai and Life sciences. He is fascinated by the growing role of computational methods in the life sciences, where learning from complex, high-dimensional data is beginning to reshape how questions in biology and medicine are asked and answered. He is especially drawn to the idea that the tools of modern AI, applied thoughtfully can accelerate progress on problems that matter for human health. Away from research, he will happily watch just about any sport that is on television, and as a fun fact, he speaks six languages.
 
-My work sits at the intersection of computer vision and healthcare — I care most about interpretability in medical imaging, where a model's confidence should be earned by the right evidence. My flagship project, [Arxelos](https://arxelos.com), is a production-deployed platform that pairs a brain-tumor MRI classifier with a side-by-side ResNet-50 vs ViT-B/16 interpretability analyzer and a PubMed-grounded RAG pipeline for medical literature.
-
-I got here through Prof. Nancy Kanwisher's MIT OpenCourseWare course on the human brain (9.13), which reframed how I thought about representation and hierarchy. Before Northeastern I completed a B.Tech in CSE with an AI/ML specialization, and I've since worked through a structured Vision-Language-Action learning track (RT-1 → RT-2 → OpenVLA, MuJoCo, DINOv2 + SigLIP) and merged a PR into HuggingFace Transformers.
-
-Outside research, I bake (usually adapting recipes to be healthier), compete in trivia, and write about AI on [LinkedIn](https://linkedin.com/in/aryan-patel2107).
 
 ## Research Interests
 
